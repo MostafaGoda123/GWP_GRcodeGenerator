@@ -1,0 +1,73 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;   }
+html {
+   font-size: 62.5%;
+   font-family: sans-serif;   }
+@media (max-width : 768px) {
+   html {
+      font-size: 43.75%;
+   }   }
+body {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #262a2f ;   }
+/*-----------------*/
+.qr {
+   width: 50rem;
+   padding: 5rem 3rem;
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+   background-color: white;   }
+.qr h2 {
+   font-size: 2.5rem;   }
+.qr input {
+   width: 100%;
+   outline: none;
+   border: 1px solid #ccc;
+   border-radius: 1rem;
+   padding: 1rem 2rem;
+   font-size: 2rem;   }
+.qr button {
+   font-size: 2rem ;
+   color: white;
+   border: 0;
+   outline: 0;
+   background-color: #494eea ;
+   line-height: 5rem;
+   border-radius: 2.5rem;
+   cursor: pointer;
+   letter-spacing: 1px;
+   transition: 0.4s;   }
+.qr button:hover {
+   background-color: #0109e9;   }
+.qr img {
+   width: 15rem;
+   margin: 0 auto;   }
+.qr input:focus {
+   border-color: #494eea;   }
+/*---------------*/
+.error {
+   animation: shake 0.1s linear 10;   }
+@keyframes shake {
+   0% {
+      transform: translateX(0);
+   }
+   25% {
+      transform: translateX(-2px);
+   }
+   50% {
+      transform: translateX(0);
+   }
+   75% {
+      transform: translateX(2px);
+   }
+   100% {
+      transform: translateX(0);
+   }}
+/*---------------*/
